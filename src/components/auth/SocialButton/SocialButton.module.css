@@ -1,0 +1,44 @@
+.button {
+  width: 100%;
+  height: var(--auth-btn-height);
+  padding: var(--space-3) var(--space-4);
+  background: var(--google-bg);
+  border: 1px solid var(--google-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.button:hover:not(:disabled) {
+  background: var(--google-hover);
+  border-color: var(--google-hover);
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-weight: 500;
+}

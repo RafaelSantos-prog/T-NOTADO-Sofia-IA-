@@ -1,0 +1,85 @@
+:root {
+  /* Cores */
+  --color-bg:           #0a0a0f;
+  --color-surface-1:    #0f0f18;
+  --color-surface-2:    #14141f;
+  --color-surface-3:    #1a1a2e;
+  --color-border:       #1e1e35;
+  --color-border-2:     #252540;
+
+  --color-purple:       #7c3aed;
+  --color-purple-light: #9d5ff5;
+  --color-purple-dark:  #6d28d9;
+  --color-purple-glow:  rgba(124, 58, 237, 0.25);
+  --color-purple-soft:  rgba(124, 58, 237, 0.12);
+
+  --color-text:         #e8e6f0;
+  --color-text-muted:   #6b6885;
+  --color-text-dim:     #3a3850;
+  --color-online:       #34d399;
+  --color-danger:       #ef4444;
+
+  /* Gradientes */
+  --gradient-purple:    linear-gradient(135deg, #6d28d9, #7c3aed, #8b5cf6);
+  --gradient-bg:        radial-gradient(ellipse 50% 40% at 15% 5%,
+                          rgba(124,58,237,0.08) 0%, transparent 70%),
+                        radial-gradient(ellipse 40% 50% at 85% 95%,
+                          rgba(91,33,182,0.10) 0%, transparent 70%);
+
+  /* Tipografia */
+  --font-display:       'Playfair Display', Georgia, serif;
+  --font-body:          'Nunito', system-ui, sans-serif;
+  --font-size-xs:       11px;
+  --font-size-sm:       13px;
+  --font-size-md:       14.5px;
+  --font-size-lg:       18px;
+  --font-size-xl:       28px;
+
+  /* Espaçamentos */
+  --space-1: 4px;   --space-2: 8px;   --space-3: 12px;
+  --space-4: 16px;  --space-5: 20px;  --space-6: 24px;
+  --space-8: 32px;  --space-10: 40px; --space-12: 48px;
+
+  /* Bordas */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-purple: 0 0 30px rgba(124, 58, 237, 0.15);
+  --shadow-card:   0 40px 80px rgba(0, 0, 0, 0.6);
+  --shadow-btn:    0 4px 20px rgba(124, 58, 237, 0.4);
+  --shadow-btn-hover: 0 8px 30px rgba(124, 58, 237, 0.6);
+
+  /* Transições */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.25s ease;
+  --transition-slow:   0.5s ease;
+  --transition-spring: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* === Auth específico === */
+  /* Layout */
+  --auth-card-width:        420px;
+  --auth-card-padding:      44px 40px;
+  --auth-input-height:      52px;
+  --auth-btn-height:        52px;
+
+  /* Força de senha */
+  --strength-weak:          #ef4444;
+  --strength-fair:          #f97316;
+  --strength-good:          #eab308;
+  --strength-strong:        #22c55e;
+
+  /* Social buttons */
+  --google-bg:              rgba(255, 255, 255, 0.03);
+  --google-border:          rgba(255, 255, 255, 0.08);
+  --google-hover:           rgba(255, 255, 255, 0.07);
+
+  /* Gradiente de fundo das telas de auth */
+  --auth-bg-gradient:
+    radial-gradient(ellipse 60% 50% at 10% 0%, rgba(124, 58, 237, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 60% at 90% 100%, rgba(91, 33, 182, 0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(124, 58, 237, 0.04) 0%, transparent 70%);
+}
