@@ -13,29 +13,11 @@ const PORT = process.env.PORT || 3000;
 // ===== MIDDLEWARE =====
 app.use(express.json({ limit: '10mb' }));
 
-// Bypass ngrok browser warning
-app.use((req, res, next) => {
-  res.setHeader('ngrok-skip-browser-warning', 'true');
-  next();
-});
-
 app.use(cors({
-  origin: function (origin, callback) {
-    const allowed = [
-      'http://localhost:5173',
-      'http://localhost:3000',
-    ];
-    if (!origin) return callback(null, true);
-    if (
-      allowed.includes(origin) ||
-      origin.endsWith('.ngrok-free.dev') ||
-      origin.endsWith('.ngrok-free.app') ||
-      origin.endsWith('.ngrok.io')
-    ) {
-      return callback(null, true);
-    }
-    return callback(new Error('CORS bloqueado: ' + origin));
-  },
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+  ],
   credentials: true,
 }));
 

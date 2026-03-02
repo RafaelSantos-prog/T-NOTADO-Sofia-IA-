@@ -1,4 +1,20 @@
-# Sofia AI — Psicóloga Virtual com IA
+# T@NOTADO — Psicóloga Virtual com IA
+
+## 📋 Informações do Projeto
+
+**Nome da Startup/Projeto:** T@NOTADO
+
+**Integrantes da Equipe:**
+- Iara de Oliveira Carvalho
+- Isaque Samuel Freitas da Silva
+- Alessandro Gouveia dos Santos
+- Emerson Alves da Silva
+- Rafael Deodoro dos Santos Filho
+
+Uma aplicação web sofisticada que combina inteligência artificial com práticas psicológicas consagradas para oferecer suporte emocional interativo e responsivo aos usuários. A plataforma utiliza modelos de linguagem avançados para simular uma conversa terapêutica, adaptando o conteúdo conforme o estado emocional e o histórico do usuário.
+
+Desenvolvida com foco em acessibilidade e usabilidade, T@NOTADO possibilita uma experiência intuitiva, permitindo que pessoas em qualquer lugar e horário possam refletir sobre seus sentimentos, identificar padrões de pensamento disfuncionais e receber sugestões de técnicas comportamentais. Apesar de ser uma ferramenta poderosa para autocuidado, ela não substitui um acompanhamento profissional presencial e sempre encoraja a busca por ajuda humana quando necessário.
+---
 
 Uma aplicação web de saúde mental construída com **React 18**, **Vite** e **Google Gemini API**, seguindo princípios de Clean Architecture, SOLID e boas práticas de engenharia de software front-end.
 
@@ -166,28 +182,6 @@ Texto analisado → Crisis keywords → Banner com recursos → Divulgação de 
 - Contraste 4.5:1
 - Keyboard navigation
 - Screen reader ready
-
-## 🌐 ngrok — Expose Local (Dev/Testing)
-
-Compartilhe Sofia na internet durante desenvolvimento usando **ngrok**:
-
-```powershell
-# Setup automático (recomendado)
-.\setup-ngrok.ps1
-
-# Ou manual: 4 terminais diferentes
-Terminal 1: npm start (na pasta server/)
-Terminal 2: npm run dev
-Terminal 3: ngrok http 3000 --region us
-Terminal 4: ngrok http 5173 --region us
-```
-
-Veja [NGROK_QUICK_START.md](./NGROK_QUICK_START.md) para detalhes completos!
-
-**Casos de uso:**
-- ✅ Demo em dispositivo móvel
-- ✅ Compartilhar acesso temporário
-- ✅ Integração com webhooks externos
 - ✅ Testing em múltiplos dispositivos
 
 ## 🚀 Deploy
