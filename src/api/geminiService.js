@@ -8,8 +8,8 @@
  * @throws {Error} API errors with descriptive messages
  */
 export async function sendMessage(apiKey, history, systemPrompt) {
-  let backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
-  
+  let backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://tnotado.vercel.app/health';
+  p://localhost:3000
   // Remover /api/chat se já estiver incluído (por segurança)
   backendUrl = backendUrl.replace(/\/api\/chat\/?$/, '');
   // Remover barra final se existir
