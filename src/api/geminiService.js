@@ -8,7 +8,12 @@
  * @throws {Error} API errors with descriptive messages
  */
 export async function sendMessage(apiKey, history, systemPrompt) {
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+  let backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+  
+  // Remover /api/chat se já estiver incluído (por segurança)
+  backendUrl = backendUrl.replace(/\/api\/chat\/?$/, '');
+  // Remover barra final se existir
+  backendUrl = backendUrl.replace(/\/$/, '');
 
   // Adicione o system prompt ao início do histórico
   const historyWithSystem = [
