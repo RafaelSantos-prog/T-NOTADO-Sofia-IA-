@@ -16,7 +16,7 @@ app.use(express.json({ limit: '10mb' }));
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://tnotado.vercel.app',
+  'https://t-notado-sofia-ia.vercel.app',
 ];
 
 // Adicionar domínios do Vercel em produção
