@@ -8,7 +8,7 @@
  * @throws {Error} API errors with descriptive messages
  */
 export async function sendMessage(apiKey, history, systemPrompt) {
-  let backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://tnotado.vercel.app';
+  let backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://zynara-iw8okirb1-rafaeldeodoro2323-7776s-projects.vercel.app';
   
   // Remover /api/chat se já estiver incluído (por segurança)
   backendUrl = backendUrl.replace(/\/api\/chat\/?$/, '');
